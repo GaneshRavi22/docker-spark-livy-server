@@ -12,12 +12,12 @@ These can be overridden at the time of building as shown in the below build imag
 docker build \
 --build-arg spark_version=2.4.5 \
 --build-arg livy_version=0.7.0 \
--t ganesh/livy .
+-t ganeshravi/livy .
 ```
 
 ## Run the Docker Container
 ```
-docker run --name livy -p 8998:8998 -t ganesh/livy
+docker run --name livy -p 8998:8998 -t ganeshravi/livy
 ```
 
 ## Send request to Livy Server using curl from Host machine
